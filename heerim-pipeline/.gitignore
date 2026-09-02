@@ -1,0 +1,10 @@
+# 로컬 전용 — 노션 실제 ID·페이지 URL·계정 정보 (공개 금지)
+reference/notion-setup.local.md
+
+# 주간 자동 실행 로그
+outputs/_logs/
+
+# OS 잡파일
+.DS_Store
+Thumbs.db
+desktop.ini

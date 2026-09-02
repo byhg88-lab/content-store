@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__notion__notion-query-data-sources",
+      "WebSearch",
+      "WebFetch(domain:zeb.energy.or.kr)",
+      "mcp__notion__notion-update-page",
+      "mcp__notion__notion-create-database",
+      "mcp__notion__notion-move-pages",
+      "Skill(schedule)",
+      "Skill(schedule:*)"
+    ]
+  }
+}

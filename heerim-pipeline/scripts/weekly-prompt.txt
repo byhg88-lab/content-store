@@ -1,0 +1,15 @@
+당신은 희림 콘텐츠 파이프라인의 주간 자동 실행입니다. 오늘은 매주 월요일 정기 실행입니다.
+작업 폴더는 이 파일의 상위 폴더(content)입니다.
+
+workflows/weekly-pipeline.md 의 1~3단계만 순서대로 수행하세요. 4단계(원고 작성)는 하지 마세요.
+
+1) prompts/weekly-scan.md 절차대로 최근 7일 국내외 건축 이슈를 스캔하고 신뢰도 필터를 적용해
+   outputs/<오늘날짜>-주간다이제스트.md 로 저장한다 (템플릿: templates/weekly-digest.md).
+2) prompts/notion-log.md 절차대로 선별 이슈를 노션 '건축 이슈 수집' DB에 추가하고
+   (원문 URL 중복은 제외), '주간 다이제스트' DB에 이번 주 로그 1행을 추가한다.
+3) prompts/topic-selection.md 절차대로 '신규' 이슈를 점수화해 블로그 2 / 유튜브 1 주제를 선정하고
+   outputs/<오늘날짜>-주제선정.md 로 저장한다. 선정된 이슈의 상태를 '제작예정'으로 변경한다.
+
+reference/ 의 heerim-brand.md, audience.md, sources.md, credibility-criteria.md 규칙을 반드시 반영하세요.
+노션 연동이 안 되면 해당 단계는 outputs/ 에 표로 대체 저장하고 로그에 남기세요.
+마지막에 "유망 주제 3개"와 주제 선정 결과를 5줄 이내로 요약해 출력하세요.
