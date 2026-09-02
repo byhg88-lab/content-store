@@ -52,6 +52,22 @@ schtasks /query /tn "Heerim Weekly Pipeline"
 schtasks /delete /tn "Heerim Weekly Pipeline" /f
 ```
 
+---
+
+# GitHub 백업/공유
+
+이 시스템은 공개 저장소 **byhg88-lab/content-store** 의 `heerim-pipeline/` 폴더에 올라가 있습니다.
+로컬에서 바꾼 내용을 GitHub에 반영하려면:
+
+```
+powershell -NoProfile -ExecutionPolicy Bypass -File "c:\Users\hahahoho\Desktop\content\scripts\sync-to-github.ps1"
+```
+
+- 이 폴더 전체를 `C:\Users\hahahoho\Desktop\content-store\heerim-pipeline\` 로 복사하고 commit + push 합니다.
+- **제외**: `outputs/_logs/`, `reference/notion-setup.local.md`(노션 실제 ID·계정 — 공개 금지)
+- `content-store` 저장소는 공개(public)입니다. 노션 실제 ID·이메일은 절대 올라가지 않게 되어 있습니다.
+
+
 ## 알아둘 것
 
 - 따라잡기 실행은 **부팅 + 로그인** 후 동작합니다.
